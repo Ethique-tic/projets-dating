@@ -21,7 +21,9 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <link rel="stylesheet" type="text/css" href="css/tinder.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -50,47 +52,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                 <li class=""><a href="index.html">accueil</a></li>
-                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">La controverse <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-header">Chronologie</li>
-                      <li><a href="frise.html">La frise chronologique</a></li>
-                      <li role="separator" class="divider"></li>
-
-                      <li class="dropdown-header">Acteurs</li>
-                      <li><a href="acteurs.html">Acteurs</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li class="dropdown-header">Débats</li>
-                      <li><a href="debat.html">Arbre des débats</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pour approfondir <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-header">Synthèse</li>
-                  <li><a href="presse.html">Synthèse</a></li>
-                  <li role="separator" class="divider"></li>
-
-                  <li class="dropdown-header">Juridiction</li>
-                  <li><a href="juriste.html">Juridiction</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Web</li>
-                  <li><a href="contreverse.html">Votre position dans la controverse</a></li>
+                 <li class=""><a href="index.html">acceuil</a></li>
+               
                 </ul>
-              </li>
 
-
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A propos <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
-                  <li role="separator" class="divider"></li>
-
-                  <li><a href="sources.html">Sources</a></li>
-
-                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -115,11 +80,64 @@
             </div>
         </div>
     </header>
+    <div class="tinder">
+    <table>
+      <tr>
+
+        <td class="title">
+          Quelle est votre position dans la controverse ?
+        </td>
+
+        
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <div id="phone">  
+      <div id="app">
+        <div class="header">
+          <div class="top">
+            <span class="left">
+              <span class="fontawesome-circle"></span>
+              <span class="fontawesome-circle"></span>
+              <span class="fontawesome-circle-blank"></span>
+              <a href="http://ethique-tic.fr/2016/sujets/rencontres/" target="_blank">etic.3</a>
+              <span class="fontawesome-signal"></span>
+            </span>
+            <span class="center clock"></span>
+            <span class="right">
+              <span>87%</span>
+              <div id="battery"></div>
+              <span class="fontawesome-bolt"></span>
+            </span>
+          </div>
+        </div>
+        <div id="people"></div>
+        <div id="control">
+          <div class="button no">
+            <a href="#" class="trigger"></a>
+            <div class="count" id="count_no">0</div>
+          </div>
+          <div class="button info">
+            <a href="#" class="trigger"></a>
+          </div>
+          <div class="button yes">
+            <a href="#" class="trigger"></a>
+            <div class="count" id="count_yes">0</div>
+          </div>
+        </div>
+      </div>
+    </div><!--slider-->
+  </div>
 
 
     <!-- Main Content -->
    
     <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/tinder.js"></script>
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

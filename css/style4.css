@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
+.infographic-wrapper {
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+.infographic-wrapper .outer-group, .infographic-wrapper .content-group .icon-group {
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+}
+.infographic-wrapper .outer-group {
+  width: 100%;
+  height: 100%;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+}
+.infographic-wrapper .outer-group [data-state~='expand'] > .content-group .icon-group {
+  opacity: 1;
+}
+.infographic-wrapper .content-group {
+  overflow: visible;
+}
+.infographic-wrapper .content-group .icon-group {
+  font-size: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.infographic-wrapper .content-group .detail {
+  opacity: 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+.infographic-wrapper .content-group .detail.enter {
+  animation: fadeIn 0.75s ease-in 0s 1 normal forwards;
+  -webkit-animation: fadeIn 0.75s ease-in 0s 1 normal forwards;
+}
+.infographic-wrapper .content-group .detail.exit {
+  animation: fadeIn 0.2s ease-in 0s 1 reverse backwards;
+  -webkit-animation: fadeIn 0.2s ease-in 0s 1 reverse backwards;
+}
+.infographic-wrapper .center-group {
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+}
+.infographic-wrapper .center-group.state-icon text.head, .infographic-wrapper .center-group.state-icon text.subhead, .infographic-wrapper .center-group.state-icon text.detail, .infographic-wrapper .center-group.state-icon image, .infographic-wrapper .center-group.state-icon rect {
+  display: none;
+}
+.infographic-wrapper .center-group.state-image text.icon, .infographic-wrapper .center-group.state-image text.head {
+  display: none;
+}
+.infographic-wrapper .center-group.state-text text.icon, .infographic-wrapper .center-group.state-text image, .infographic-wrapper .center-group.state-text rect {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

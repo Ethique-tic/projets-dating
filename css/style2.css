@@ -58,6 +58,12 @@ ul.dropdown-menu {
 }
 p {
     text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+ 
+    font-size: 1em;
+    font-family: georgia, times, "Times New Roman", serif;
+
 }
 
 .container {
@@ -127,3 +133,37 @@ h1, h2, h3, h4, h5, h6 {
  a:hover{
     text-decoration: none;
  }
+
+ .row{
+
+    margin-top: 20px;
+ }
+ body #footer small {
+   
+    display: block;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+body #prefootergrad {
+    background: linear-gradient(to bottom, white, pink);
+}
+body #footer {
+    background: pink ;
+    padding-top: 40px;
+}
+
+body .wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#footer {
+    font-size:  15px;
+}
+#footerp {
+    text-align: center;
+}
